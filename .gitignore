@@ -1,0 +1,14 @@
+node_modules
+_node_modules
+.DS_Store
+/dist
+dist-ssr
+*.local
+count.txt
+.nitro
+.tanstack
+.output
+.vinxi
+todos.json
+package-lock.json
+storybook-static

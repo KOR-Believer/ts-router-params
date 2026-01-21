@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+/* default breakpoints reset */
+@theme {
+  --breakpoint-*: initial;
+}
+
+/* PC first breakpoints */
+@custom-variant 2xl (@media (max-width: 1536px));
+@custom-variant xl (@media (max-width: 1280px));
+@custom-variant lg (@media (max-width: 1024px));
+@custom-variant md (@media (max-width: 768px));
+@custom-variant sm (@media (max-width: 640px));
+@custom-variant xs (@media (max-width: 375px));
+/* Orientation variants */
+@custom-variant portrait (@media (orientation: portrait));
+@custom-variant landscape (@media (orientation: landscape));
+
+
+html,
+body {
+  scrollbar-gutter: stable;
+  overscroll-behavior: none;
+}
+
+body {
+  @apply m-0;
+  font-family: Pretendard,
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  'Roboto',
+  'Oxygen',
+  'Ubuntu',
+  'Cantarell',
+  'Fira Sans',
+  'Droid Sans',
+  'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro,
+  Menlo,
+  Monaco,
+  Consolas,
+  'Courier New',
+  monospace;
+}
